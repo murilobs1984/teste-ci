@@ -1,4 +1,5 @@
-/// <reference types="cypress" />
+
+/*/// <reference types="cypress" />
 
 context('Cypress.Commands', () => {
   beforeEach(() => {
@@ -198,3 +199,4 @@ context('Cypress.spec', () => {
     cy.wrap(Cypress.spec).should('include.keys', ['name', 'relative', 'absolute'])
   })
 })
+*/
