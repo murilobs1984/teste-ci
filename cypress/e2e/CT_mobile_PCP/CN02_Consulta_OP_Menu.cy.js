@@ -14,7 +14,7 @@ describe('app_minha_producao', () => {
 
   it('Consulta de OP através do Menu', () => {
 
-    cy.tamanhoTelaParaMobile()
+    //cy.tamanhoTelaParaMobile()
     cy.Config() //esta customização está em commands
     cy.Login()  //esta customização está em commands
 

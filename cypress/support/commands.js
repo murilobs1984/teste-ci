@@ -6,11 +6,11 @@ Cypress.Commands.add('tamanhoTelaParaMobile', () => {
   
   Cypress.Commands.add('Config', () =>{
   
-      cy.intercept('GET', 'http://localhost:8100/index.html').as('getConfig')
-      cy.visit('http://localhost:8100/index.html', { force: true })
+      cy.intercept('GET', 'http://localhost:8100/welcome').as('getConfig')
+      cy.visit('http://localhost:8100/welcome', { force: true })
       cy.get('div').then((nome_qualquer) => {
         if (nome_qualquer.find('div', 'Carregando')) {
-          cy.visit('http://localhost:8100/index.html',{ force: true })
+          cy.visit('http://localhost:8100/welcome',{ force: true })
         }
         else {
           cy.contains('div', 'Olá!').click({ force: true })
