@@ -6,12 +6,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-      with:
-        start: npm start
     - name: Install modules
       run: npm install
-    - name: Ionic Cordova
-      run: ionic cordova run browser -l
+    with:
+        start: npm start
+    ports:
+      - 8180
+    #- name: Ionic Cordova
+    #  run: ionic cordova run browser -l
 
   cypress-run-1:
     runs-on: ubuntu-20.04
