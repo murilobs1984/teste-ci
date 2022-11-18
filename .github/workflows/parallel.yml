@@ -10,6 +10,7 @@ jobs:
       run: npm install
     - name: Ionic Cordova
       run: ionic cordova run browser -l
+    - name: ambiente
       run: npm start & wait-on http://localhost:8100
 
   cypress-run-1:
