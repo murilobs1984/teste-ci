@@ -2,14 +2,14 @@ name: End-to-end tests
 on: [push]
 jobs:
 
-  murilo:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Install modules
-      run: npm install
-    - name: Ionic Cordova
-      run: ionic cordova run browser -l
+  #murilo:
+    #runs-on: ubuntu-latest
+    #steps:
+    #- uses: actions/checkout@v2
+    #- name: Install modules
+      #run: npm install
+    #- name: Ionic Cordova
+      #run: ionic cordova run browser -l
 
   cypress-run-1:
     runs-on: ubuntu-20.04
