@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cypress:test1": "cypress run --browser chrome --spec 'cypress/e2e/1-getting-started'",
-    "cypress:test2": "cypress run --browser chrome --spec 'cypress/e2e/2-advanced-examples'",
-    "cypress:test3": "cypress run --browser chrome --spec 'cypress/e2e/CT_mobile_PCP'"
+    "cypress:test1": "cypress run --browser chrome --spec 'cypress/e2e/CT_mobile_PCP'",
+    "cypress:test2": "cypress run --browser chrome --spec 'cypress/e2e/1-getting-started'",
+    "cypress:test3": "cypress run --browser chrome --spec 'cypress/e2e/2-advanced-examples'"
   },
   "keywords": [],
   "author": "",
