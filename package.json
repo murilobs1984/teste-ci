@@ -6,7 +6,8 @@
   "scripts": {
     "cypress:test1": "cypress run --browser chrome --spec 'cypress/e2e/CT_mobile_PCP'",
     "cypress:test2": "cypress run --browser chrome --spec 'cypress/e2e/1-getting-started'",
-    "cypress:test3": "cypress run --browser chrome --spec 'cypress/e2e/2-advanced-examples'"
+    "cypress:test3": "cypress run --browser chrome --spec 'cypress/e2e/2-advanced-examples'",
+    "cypress:test4": "npx cypress run --record --key aecb3b08-7666-4044-a825-0312af6ca5dd"
   },
   "keywords": [],
   "author": "",
