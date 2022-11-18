@@ -3,13 +3,14 @@ on: [push]
 jobs:
 
   #murilo:
-    #runs-on: ubuntu-latest
-    #steps:
-    #- uses: actions/checkout@v2
-    #- name: Install modules
-      #run: npm install
-    #- name: Ionic Cordova
-      #run: ionic cordova run browser -l
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install modules
+      run: npm install
+    - name: Ionic Cordova
+      run: ionic cordova run browser -l
+      wait-on: 'http://localhost:8100'
 
   cypress-run-1:
     runs-on: ubuntu-20.04
