@@ -10,8 +10,6 @@ jobs:
       run: npm install
     with:
         start: npm start
-    ports:
-      - 8180
     #- name: Ionic Cordova
     #  run: ionic cordova run browser -l
 
