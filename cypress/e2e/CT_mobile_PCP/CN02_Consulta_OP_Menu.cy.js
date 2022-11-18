@@ -15,8 +15,9 @@ describe('app_minha_producao', () => {
   it('Consulta de OP através do Menu', () => {
 
     //cy.tamanhoTelaParaMobile()
-    cy.Config() //esta customização está em commands
-    cy.Login()  //esta customização está em commands
+    //cy.Config() //esta customização está em commands
+    //cy.Login()  //esta customização está em commands
+    cy.visit('http://embau:8480/totvs-login/loginForm')
 
     cy.intercept('POST', '**/api/cpp/v1/productionMobile/**').as('postMenu')
     cy.get('ion-menu-button').click() //Clica no botão Menu

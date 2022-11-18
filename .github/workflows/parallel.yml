@@ -8,8 +8,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: Install modules
       run: npm install
-    - name: Ionic Cordova
-      run: ng.cmd run app:ionic-cordova-serve --host=localhost --port=8100 --platform=browser
+    #- name: Ionic Cordova
+     # run: ionic cordova run browser -l
 
   cypress-run-1:
     runs-on: ubuntu-20.04
