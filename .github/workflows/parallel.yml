@@ -8,10 +8,10 @@ jobs:
     - uses: actions/checkout@v2
     - name: Install modules
       run: npm install
-    - name: Ionic Cordova
-      run: ionic cordova run browser -l
     - name: ambiente
       run: npm start & wait-on http://localhost:8100
+    - name: Ionic Cordova
+      run: ionic cordova run browser -l
 
   cypress-run-1:
     runs-on: ubuntu-20.04
